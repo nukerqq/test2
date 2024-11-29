@@ -1,0 +1,71 @@
+/* Ogólny styl strony */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: url('https://media.tenor.com/images/cd627f6ac853a4a5d93f8cb547da03ac/tenor.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Avatar użytkownika */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 20px 0;
+}
+
+/* Nazwa użytkownika */
+.username {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Opis użytkownika */
+.bio {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Linki do mediów społecznościowych */
+.links {
+  margin: 20px 0;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Animacja tła */
+@keyframes backgroundAnim {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+body {
+  animation: backgroundAnim 10s infinite alternate;
+}
